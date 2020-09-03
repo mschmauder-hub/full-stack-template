@@ -5,6 +5,7 @@
   "description": "Express server with CRA, ESLint, Git Hooks",
   "main": "server.js",
   "scripts": {
+    "postinstall": "cd client && npm install",
     "build": "cd client && npm run build",
     "test": "cd client && npm test",
     "start": "node server.js",

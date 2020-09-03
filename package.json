@@ -5,9 +5,11 @@
   "description": "Express server with CRA, ESLint, Git Hooks",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd client && npm run build",
+    "test": "cd client && npm test",
     "start": "node server.js",
-    "prettify": "npx prettier --write ."
+    "prettify": "npx prettier --write .",
+    "lint": "eslint . --ext .js"
   },
   "repository": {
     "type": "git",
